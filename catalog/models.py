@@ -1,0 +1,8 @@
+from django.db import models
+
+class Catalog(models.Model):
+  name = models.CharField(max_length=255
+ name = models.SlugField(max_length=150)
+  publisher = models.CharField(max_length=300)
+  description = models.TextField()
+  pub_date = models.DateTimeField(default=datetime.now)
